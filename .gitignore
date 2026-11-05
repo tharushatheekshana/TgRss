@@ -1,0 +1,38 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# SQLite databases & runtime state
+*.db
+*.sqlite
+*.sqlite3
+esana_state.db
+
+# Generated feeds & local outputs
+*.xml
+esana.xml
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Editor & OS artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
