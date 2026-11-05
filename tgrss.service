@@ -1,0 +1,15 @@
+[Unit]
+Description=Helakuru Esana Telegram News Bot (TgRss)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/tharusha/Documents/TgRss
+ExecStart=/usr/bin/python3 /home/tharusha/Documents/TgRss/tg_bot.py
+Restart=always
+RestartSec=15
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
